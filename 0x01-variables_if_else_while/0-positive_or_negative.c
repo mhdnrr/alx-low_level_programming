@@ -1,9 +1,18 @@
 #include <stdlib.h>
+
 #include <time.h>
+
 #include <stdio.h>
 
 
-/*header
+/**
+
+ * Positive anything is better than negative nothing
+
+ *
+
+ * Return: Always 0 (Success)
+
  */
 
 int main(void)
@@ -43,4 +52,4 @@ int main(void)
 
         return (0);
 
-}}
+}
