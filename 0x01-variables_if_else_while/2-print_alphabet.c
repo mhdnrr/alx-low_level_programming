@@ -1,18 +1,20 @@
 #include <stdio.h>
 
+/**
+ * main - Prints the alphabet.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-    //declare a variable
-    char alphabet;
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-    for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
-    {
-        // print the value of the variable 
-        putchar(alphabet);
-
-    }
-
-    putchar('\n');
-    return (0);
+	for (i = 0; i < 26; i++)
+	{
+		putchar(alp[i]);
+	}
+	putchar('\n');
+	return (0);
 }
 
