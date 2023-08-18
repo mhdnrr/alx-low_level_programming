@@ -1,25 +1,19 @@
 #include "main.h"
+/**
+ * main - prints all alphabet, in lowercase, followed by a new line
+ * Return
+ */
+void print_alphabet(void)
+{
+        char chr;
 
-        #include <unistd.h>
+        chr = 'a';
 
-        /**
-
-         * _putchar - writes the character c to stdout
-
-         * @c: The character to print
-
-         *
-
-         * Return: On success 1.
-
-         * On error, -1 is returned, and errno is set appropriately.
-
-         */
-
-        int _putchar(char c)
-
+        while (chr <= 'z')
         {
-
-                return (write(1, &c, 1));
-
+                _putchar(chr);
+                chr++;
         }
+
+        _putchar('\n');
+}
