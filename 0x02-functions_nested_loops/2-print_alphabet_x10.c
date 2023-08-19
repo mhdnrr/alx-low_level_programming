@@ -1,35 +1,21 @@
-#ifndef main_h
-
-        #define main_h
-
-
-
-        int _putchar(char);
-
-        void print_alphabet(void);
-
-        void print_alphabet_x10(void);
-
-        int _islower(int c);
-
-        int _isalpha(int c);
-
-        int print_sign(int n);
-
-        int _abs(int);
-
-        int print_last_digit(int);
-
-        void jack_bauer(void);
-
-        void times_table(void);
-
-        int add(int, int);
-
-        void print_to_98(int n);
-
-        void print_times_table(int n);
-
-
-
-        #endif
+#include "main.h"
+/**
+ * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
+ */
+void print_alphabet_x10(void)
+{
+        char ch;
+        int i;
+        i = 0;
+        while (i < 10)
+        {
+                ch = 'a';
+                while (ch <= 'z')
+                {
+                        _putchar(ch);
+                        ch++;
+                }
+                _putchar('\n');
+                i++;
+        }
+}
