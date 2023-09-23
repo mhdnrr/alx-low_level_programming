@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- * _atoi - converts a string to an integer
+ * _atoi - converts a string
+ * @s: s
  * Return: the int converted from the string
  */
 int _atoi(char *s)
@@ -45,7 +46,9 @@ int _atoi(char *s)
 }
 
 /**
- * main - multiplies two numbers
+ * main - multiplies two number
+ * @argc: argc
+ * @argv: argv
  * Return: 0 (Success), 1 (Error)
  */
 
