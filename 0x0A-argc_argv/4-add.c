@@ -4,7 +4,8 @@
 #include <string.h>
 
 /**
- * check_num - check - string there are digit
+ * check_num - check - string
+ * @str: str
  * Return: Always 0 (Success)
  */
 
@@ -28,7 +29,9 @@ int check_num(char *str)
 }
 
 /**
- * main - Print the name of the program
+ * main - Print the name
+ * @argc: argc
+ * @argv: argv
  * Return: Always 0 (Success)
  */
 
@@ -41,12 +44,12 @@ int main(int argc, char *argv[])
 	int sum = 0;
 
 	count = 1;
-	while (count < argc) 
+	while (count < argc)
 	{
 		if (check_num(argv[count]))
 
 		{
-			str_to_int = atoi(argv[count]); 
+			str_to_int = atoi(argv[count]);
 			sum += str_to_int;
 		}
 
