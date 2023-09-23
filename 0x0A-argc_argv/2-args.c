@@ -2,7 +2,9 @@
 #include "main.h"
 
 /**
- * main - prints all arguments it receives
+ * main - prints all arguments
+ * @argc: argc
+ * @argv: argv
  * Return: Always 0 (Success)
  */
 
