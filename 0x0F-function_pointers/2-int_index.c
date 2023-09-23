@@ -2,6 +2,9 @@
 
 /**
  * int_index - return index place
+ * @array: array
+ * @size: size
+ * @cmp: cmp
  * Return: 0
  */
 int int_index(int *array, int size, int (*cmp)(int))

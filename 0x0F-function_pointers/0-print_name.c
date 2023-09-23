@@ -2,7 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_name - print name using pointer
+ * print_name - print name
+ * @f: f
+ * @name: name
  * Return: nothing
  **/
 void print_name(char *name, void (*f)(char *))
