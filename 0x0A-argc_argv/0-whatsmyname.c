@@ -1,15 +1,22 @@
 #include <stdio.h>
-
-/**
- * main - prints the name of the program
- * @argc: number of arguments
- * @argv: array of arguments
- *
- * Return: Always 0 (Success)
- */
-int main(int argc __attribute__((unused)), char *argv[])
+#include <stdlib.h>
+#include <unistd.h>
+#include "main.h"
+int main(void)
 {
-	printf("%s\n", argv[0]);
+    char path[1024];
+    ssize_t path_len = readlink("/proc/self/exe", path, sizeof(path) - 1);
 
-	return (0);
+    if (path_len != -1)
+    {
+        path[path_len] = '\0';
+        printf("%s\n", path);
+    }
+    else
+    {
+        fprintf(stderr, "Error: Failed to retrieve program name.\n");
+        return 1;
+    }
+
+    return 0;
 }
