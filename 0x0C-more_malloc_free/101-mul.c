@@ -6,7 +6,7 @@
 
 /**
  * is_digit - checks if a string
- * @
+ * @s: s
  * Return: 0 if a non-digit is found, 1 otherwise
  */
 int is_digit(char *s)
@@ -24,6 +24,7 @@ int is_digit(char *s)
 
 /**
  * _strlen - returns the length of a string
+ * @s: s
  * Return: the length of the string
  */
 int _strlen(char *s)
@@ -47,7 +48,9 @@ void errors(void)
 }
 
 /**
- * main - multiplies two positive numbers
+ * main - multiplies two positive number
+ * @argc: argc
+ * @argv: argv
  * Return: always 0 (Success)
  */
 int main(int argc, char *argv[])
