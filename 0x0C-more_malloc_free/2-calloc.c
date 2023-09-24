@@ -3,6 +3,9 @@
 
 /**
  * *_memset - fills memory with a constant byte
+ * @s: s
+ * @b: b
+ * @n: n
  * Return: pointer to the memory area s
  */
 char *_memset(char *s, char b, unsigned int n)
@@ -19,6 +22,8 @@ char *_memset(char *s, char b, unsigned int n)
 
 /**
  * *_calloc - allocates memory for an array
+ * @nmemb: nmemb
+ * @size: size
  * Return: pointer to allocated memory
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
