@@ -3,7 +3,7 @@
 
 /**
  * count_word - helper function to splits a string
- * @
+ * @s: s
  * @
  * Return: number of words
  */
