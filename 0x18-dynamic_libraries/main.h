@@ -1,5 +1,5 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#ifndef _holberton_h_
+#define _holberton_h_
 
 int _putchar(char c);
 int _islower(int c);
